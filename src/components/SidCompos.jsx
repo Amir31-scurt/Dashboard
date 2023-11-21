@@ -1,13 +1,11 @@
-export default function Fruit() {
+export default function SideBar() {
     // state///////////
 
     // comportement/////////
 
     // affichage //////////////
     return (
-
-
-        {/** Rendu ____________ */ }
+        <h1>Bonjour</h1>
 
 
     )

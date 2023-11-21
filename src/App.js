@@ -1,6 +1,7 @@
 
 import React, { useEffect, useState, useRef } from 'react';
 import './index.css'
+import SideBar from './components/SidCompos';
 
 function App(props) {
   //State {etat, donnees dynamiques}//////////////////////
@@ -25,9 +26,13 @@ function App(props) {
   // affichage {render} /////////////
   
   return (
-    <div>
-      <h1 className="text-3xl font-bold">{props.titre} </h1>
-      <h2 className="text-black-800 bg-red-800 mt-8">{barry} </h2>
+    <div className='flex'>
+      <div className='w-1/4 bg-red-400 h-auto'>
+        <SideBar/>
+      </div>
+      <div className='w-3/4 bg-blue-500'>
+        <h2>Bonjour</h2>
+      </div>
     </div>
   );
 }
