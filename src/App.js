@@ -1,11 +1,9 @@
-
+import { FaAddressBook } from "react-icons/fa6";
 import React, { useEffect, useState, useRef } from 'react';
 import './index.css'
-
-import './CSS/Style-App.css'
-import SideBar from './components/SidCompos';
 import SideBar from './components/SidCompos';
 import './CSS/Style-App.css'
+import NavBar from "./components/NavCompos";
 
 
 
@@ -31,12 +29,9 @@ function App() {
       <div className='w-1/4 h-auto route border-r-2 border-gray-300'>
         <SideBar/>
       </div>
-
-
-
-      {/************ NavBar********** */}
-      <div className='w-3/4 h-20'>
-        <h2>Bonjour</h2>
+      <div className='w-3/4 bg-blue-500'>
+        <NavBar/>
+        <FaAddressBook className="text-4xl text-blue-200"/>
       </div>
     </div>
   );
