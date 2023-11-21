@@ -1,7 +1,9 @@
 
 import React, { useEffect, useState, useRef } from 'react';
 import './index.css'
+
 import SideBar from './components/SidCompos';
+import './CSS/Style-App.css'
 
 function App(props) {
   //State {etat, donnees dynamiques}//////////////////////
@@ -36,5 +38,7 @@ function App(props) {
     </div>
   );
 }
+
+
 
 export default App;
