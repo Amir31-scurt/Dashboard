@@ -1,4 +1,4 @@
-export default function Fruit({ fruitinfo, onClick }) {
+export default function Fruit() {
     // state///////////
 
     // comportement/////////
