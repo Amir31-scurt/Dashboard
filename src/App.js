@@ -24,14 +24,13 @@ function App() {
   // affichage {render} /////////////
   
   return (
-    <div className='flex'>
+    <div className='flex h-full'>
       {/************ SidBar********** */}
-      <div className='w-1/4 h-auto route border-r-2 border-gray-300'>
+      <div className='w-1/4 h-auto route border-r-2 border-gray-300 bg-white-500'>
         <SideBar/>
       </div>
-      <div className='w-3/4 bg-blue-500'>
+      <div className='w-3/4 bg-white-500'>
         <NavBar/>
-        <FaAddressBook className="text-4xl text-blue-200"/>
       </div>
     </div>
   );

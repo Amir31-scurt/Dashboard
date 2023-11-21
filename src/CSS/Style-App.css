@@ -4,3 +4,39 @@
 .fonto{
   font-family:sans-serif;
 }
+.cloche{
+  font-size: 1.7em;
+}
+.imge{
+  width: 90px;
+}
+.imge img{
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width : 1122px) {
+  .nom h1{
+    font-size: 20px;
+  }
+  
+}
+@media screen and (max-width : 870px) {
+  .nom p, h1{
+    display: none;
+  }
+  .imge{
+    margin: auto;
+  }
+  
+}
+@media screen and (max-width : 640px) {
+  .nom{
+    display: none;
+  }
+  .cloche{
+    margin-left: 20px;
+  }
+  .inp{
+    display: none;
+  }
+}
