@@ -5,8 +5,27 @@ export default function SideBar() {
 
     // affichage //////////////
     return (
-        <h1>Bonjour</h1>
+        <div>
+            <div>
 
-
+            </div>
+            <div>
+                <p></p>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div>
+                <p></p>
+                <ul>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
     )
 }
