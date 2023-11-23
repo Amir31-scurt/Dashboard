@@ -1,9 +1,92 @@
-
-import { AiOutlineBell } from "react-icons/ai";
+import { AiOutlineBell } from 'react-icons/ai';
+import { HiOutlineSquares2X2 } from 'react-icons/hi2';
+import { GrDocument } from 'react-icons/gr';
+import { MdPayment } from 'react-icons/md';
+import { LuMessageSquare } from 'react-icons/lu';
+import { AiOutlinePieChart } from 'react-icons/ai';
+import { RiUser3Line } from 'react-icons/ri';
+import { MdOutlineSettings } from 'react-icons/md';
 export default function SideBar() {
   // state///////////
+  const buttons = [
+    {
+      title: 'Overview',
+      icon: <HiOutlineSquares2X2 />,
+      id: 1,
+    },
+    {
+      title: 'Documents',
+      icon: <GrDocument />,
+      id: 2,
+    },
+    {
+      title: 'Payments',
+      icon: <MdPayment />,
+      id: 3,
+    },
+    {
+      title: 'Messages',
+      icon: <LuMessageSquare />,
+      id: 4,
+    },
+    {
+      title: 'Report Center',
+      icon: <AiOutlinePieChart />,
+      id: 5,
+    },
+  ];
+  const buttons2 = [
+    {
+      title: 'Users',
+      icon: <RiUser3Line />,
+      id: 6,
+    },
+    {
+      title: 'Settings',
+      icon: <MdOutlineSettings />,
+      id: 7,
+    },
+  ];
 
   // comportement/////////
+  const BtnInside = (props) => {
+    return (
+      <div className="flex-col click">
+        <button className="flex my-3 px-8 items-center">
+          <span className="me-6 icono py-3">{props.button.icon}</span>
+          <h2 className="text-lg font-bold txt">{props.button.title}</h2>
+        </button>
+      </div>
+    );
+  };
+  const BtnInside2 = (props) => {
+    return (
+      <div className="flex-col click">
+        <button className="flex my-3 px-8 items-center">
+          <span className="me-6 icono py-3">{props.button.icon}</span>
+          <h2 className="text-lg font-bold txt">{props.button.title}</h2>
+        </button>
+      </div>
+    );
+  };
+  const BtnList = () => {
+    return (
+      <div>
+        {buttons.map((button) => {
+          return <BtnInside button={button} />;
+        })}
+      </div>
+    );
+  };
+  const BtnList2 = () => {
+    return (
+      <div>
+        {buttons2.map((button) => {
+          return <BtnInside2 button={button} />;
+        })}
+      </div>
+    );
+  };
 
   // affichage //////////////
   return (
@@ -14,61 +97,34 @@ export default function SideBar() {
         </div>
         <div className="ms-5 nom">
           <h1 className="text-2xl font-bold ms-4">Bakeli</h1>
-          <p className="text-sm ms-4 text-gray-500 fonto">School of Technology</p>
+          <p className="text-sm ms-4 text-gray-500 fonto">
+            School of Technology
+          </p>
         </div>
       </div>
 
       {/************* Menu ************/}
 
       <div className=" mt-10 longuer w-3/4">
-
-        <div className=" flex-col flex gap-2">{/*** Main-Menu ***/}
-          <div className="mb-4">
-            <h1 className="text-gray-500 font-bold ">MAIN MENU</h1>
+        <div className=" flex-col flex gap-1">
+          {/*** Main-Menu ***/}
+          <div className="cont">
+            <h2 className="text-gray-500 font-bold highlight">MAIN MENU</h2>
           </div>
-
-          <div className="flex-col click">
-            <button className="flex my-4 px-6 items-center ">
-              <AiOutlineBell className="me-6 icono" />
-              <h2 className="text-xl font-bold ">Overview</h2>
-            </button>
-          </div>
-
-          <div className="flex-col click">
-            <button className="flex my-4 px-6 items-center ">
-              <AiOutlineBell className="me-6 icono" />
-              <h2 className="text-xl font-bold ">Overview</h2>
-            </button>
-          </div>
-
-          <div className="flex-col click">
-            <button className="flex my-4 px-6 items-center ">
-              <AiOutlineBell className="me-6 icono" />
-              <h2 className="text-xl font-bold ">Overview</h2>
-            </button>
-          </div>
-
-          <div className="flex-col click">
-            <button className="flex my-4 px-6 items-center ">
-              <AiOutlineBell className="me-6 icono" />
-              <h2 className="text-xl font-bold ">Overview</h2>
-            </button>
-          </div>
-
-   
+          <BtnList />
         </div>
-
-
-        <div className="">{/*** Reference-Menu ***/}
-
+        {/*** Reference-Menu ***/}
+        <div className="flex-col flex gap-1 mt-8">
+          <div className="cont">
+            <h2 className="text-gray-500 font-bold highlight">PREFERENCES</h2>
+          </div>
+          <BtnList2 />
         </div>
-
-
-        <div className="">{/*** Notice-Menu ***/}
-
+        {/*** Notice-Menu ***/}
+        <div className="">
+            
         </div>
       </div>
-
     </div>
-  )
+  );
 }
