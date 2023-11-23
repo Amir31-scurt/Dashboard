@@ -8,7 +8,7 @@
   font-size: 1.7em;
 }
 .icono{
-  font-size: 2.3em;
+  font-size: 2em;
 }
 .imge{
   width: 90px;
@@ -17,27 +17,55 @@
   width: 100%;
   height: 100%;
 }
-.longeur{
-  width: 90%;
-  margin: auto;
-  background-color: #005898;
-  height: 200px;
+.click{
+  width: 95%;
 }
-.click:hover{
-  background-color: black;
+.focu{
+  width: 95%;
+  background-color: rgba(0, 0, 0, 0.822);
   color: #fff;
-  border-radius: 15px;
+  border-radius: 10px;
+}
+ .click:focus, .click:hover {
+  background-color: rgba(0, 0, 0, 0.822);
+  color: #fff;
+  border-radius: 10px;
 }
 
-
-
-
-
-
-
-
-
-
+.documo{
+  width: 100%;
+  height: 930px;
+  background-color: #010d0d1a;
+}
+.longuer{
+  width: 90%;
+}
+.mono{
+  color:#F59F00;
+  font-weight: bold;
+}
+.mono1{
+  width: 100%;
+}
+.shad{
+  background-color: #fff;
+  box-shadow: 1px 1px 5px 1px rgba(128, 128, 128, 0.368);
+  border-radius: 10px;
+}
+.shad2, .shad23{
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  display: flex ;
+  justify-content: center;
+  align-items: center;
+}
+.shad2{
+  background-color: #f7d3d3;
+}
+.shad23{
+  background-color: #D0EBFF;
+}
 
 
 
@@ -48,25 +76,63 @@
   .nom h1{
     font-size: 20px;
   }
+  .click, .focu{
+    width: 100%;
+    font-size: 9px;
+  }
   
 }
 @media screen and (max-width : 870px) {
-  .nom p, h1{
+  .nom p, h1, .texto, .part1, .part2 {
     display: none;
   }
-  .imge{
+  .imge, .click, .focu {
     margin: auto;
   }
-  
+  .partx{
+    margin-left: 70%;
+  }
+  .click, .focu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    width: 57%;
+  }
+  .focu{
+    padding-left: 10px;
+  }
+  .click{
+    padding-left: 18px;
+  }
 }
-@media screen and (max-width : 640px) {
-  .nom{
+@media screen and (max-width : 650px) {
+  .nom,.inp, .part1, .part2{
     display: none;
   }
   .cloche{
     margin-left: 20px;
   }
-  .inp{
-    display: none;
+  .click, .focu{
+    width: 90%;
   }
+  .part3{
+    width: 95%;
+  }
+  .moto{
+    width: 98%;
+    flex-direction: column;
+  }
+  .moto2, .moto3{
+    margin-top: -28px;
+    margin-bottom: 10px;
+  }
+  .moto h2{
+    font-size: 14px;
+    margin-bottom: 2px;
+  }
+  .moto3{
+    margin-left: 20px;
+  }
+
 }

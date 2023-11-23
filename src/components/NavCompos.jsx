@@ -18,7 +18,7 @@ function NavBar() {
         <div className="flex gap-8 items-center">
           <AiOutlineBell className="cloche" />
           <div className="flex items-center gap-4">
-            <img src="Images/User.jpg" alt="" className="w-12 rounded-full" />
+            <img src="Images/image.jpg" alt="" className="w-12 rounded-full" />
             <h2 className="inp">Kalika</h2>
           </div>
           <IoIosArrowDown className="cloche" />
