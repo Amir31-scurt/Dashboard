@@ -8,14 +8,7 @@
   font-size: 1.7em;
 }
 .icono{
-<<<<<<< HEAD
   font-size: 2em;
-=======
-  font-size: 1.7em;
-}
-.txt{
-  font-size: 16px;
->>>>>>> 8694438c0f56cad210d7e0318bc342562c9debd9
 }
 .imge{
   width: 90px;
@@ -27,7 +20,7 @@
 .click{
   width: 95%;
 }
-<<<<<<< HEAD
+
 .focu{
   width: 95%;
   background-color: rgba(0, 0, 0, 0.822);
@@ -38,23 +31,7 @@
   background-color: rgba(0, 0, 0, 0.822);
   color: #fff;
   border-radius: 10px;
-=======
-.highlight{
-  font-size: 14px;
-  line-height: 16.4px;
-}
-.click:hover{
-  background-color: black;
-  color: #fff;
-  border-radius: 5px;
-  cursor: pointer;
-}
-.hold{
-  width: 130px;
-}
-.band{
-  width: 55em;
->>>>>>> 8694438c0f56cad210d7e0318bc342562c9debd9
+
 }
 
 .documo{
@@ -114,7 +91,6 @@
   .imge, .click, .focu {
     margin: auto;
   }
-<<<<<<< HEAD
   .partx{
     margin-left: 70%;
   }
@@ -131,14 +107,8 @@
   .click{
     padding-left: 18px;
   }
-=======
-  .txt{
-    display: none;
-  }
-  
-  
->>>>>>> 8694438c0f56cad210d7e0318bc342562c9debd9
 }
+
 @media screen and (max-width : 650px) {
   .nom,.inp, .part1, .part2{
     display: none;
