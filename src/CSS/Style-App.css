@@ -1,6 +1,9 @@
 .route{
   height: auto;
 }
+.cbody{
+  height: 100%;
+}
 .fonto{
   font-family:sans-serif;
 }
@@ -22,9 +25,7 @@
 }
 
 .focu{
-  width: 95%;
-  background-color: rgba(0, 0, 0, 0.822);
-  color: #fff;
+  color: black;
   border-radius: 10px;
 }
  .click:focus, .click:hover {
@@ -33,7 +34,12 @@
   border-radius: 10px;
 
 }
-
+.active{
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  width: 95%;
+}
 .documo{
   width: 100%;
   height: auto;
@@ -85,7 +91,20 @@
     width: 100%;
     font-size: 9px;
   }
-  
+    .focu, .icono{
+    font-size: 1em;
+    margin: 0 0.8em 0 0;
+  }
+  .click:focus, .click:hover {
+    background-color: rgba(0, 0, 0, 0.822);
+    color: #fff;
+    border-radius: 10px;
+  }
+}
+@media screen and (min-width : 1024px){
+  .cbody{
+    height: 20.5em;
+  }
 }
 
 @media screen and (max-width : 1026px) {

@@ -36,8 +36,8 @@ export default function SideBar() {
           <div className="mb-4">
             <h1 className="text-gray-500 font-bold ">MAIN MENU</h1>
           </div>
-          <div className="lex-col flex gap-2 focu">
-            <Menu icone={<HiOutlineViewGrid className="me-6 icono" />} text={'Overview'} />
+          <div className="flex-col flex gap-2 active">
+            <Menu icone={<HiOutlineViewGrid className="icono me-6" />} text={'Overview'} />
           </div>
           {Elements.map((elem, index) => (<Menu {...elem} key={index} />))}
         </div>
