@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // import { FaAddressBook } from "react-icons/fa6";
 import React, { useEffect, useState, useRef } from 'react';
 import { FiMessageSquare, FiUser, FiPieChart, FiSettings } from "react-icons/fi";
@@ -20,11 +21,27 @@ function App() {
 
 
 
+=======
+import { FaAddressBook } from 'react-icons/fa6';
+import React, { useEffect, useState, useRef } from 'react';
+import './index.css';
+import SideBar from './components/SidCompos';
+import './CSS/Style-App.css';
+import NavBar from './components/NavCompos';
+import Body from './components/Cartes';
+
+function App() {
+  //State {etat, donnees dynamiques}//////////////////////
+
+  // comportement/////////////////////////////////////
+
+>>>>>>> 8694438c0f56cad210d7e0318bc342562c9debd9
   // affichage {render} /////////////
 
   return (
-    <div className='flex h-full'>
+    <div className="flex h-full">
       {/************ SidBar********** */}
+<<<<<<< HEAD
       <div className='w-1/4 h-auto route border-r-2 border-gray-300 '>
         <SideBar />
       </div>
@@ -100,10 +117,17 @@ function App() {
 
 
 
+=======
+      <div className="w-1/4 h-auto route border-r-2 border-gray-300 bg-white-500">
+        <SideBar />
+      </div>
+      <div className="w-3/4 bg-white-500">
+        <NavBar />
+        <Body />
+>>>>>>> 8694438c0f56cad210d7e0318bc342562c9debd9
       </div>
     </div>
   );
 }
-
 
 export default App;
