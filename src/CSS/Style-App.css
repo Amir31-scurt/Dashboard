@@ -36,7 +36,7 @@
 
 .documo{
   width: 100%;
-  height: 930px;
+  height: auto;
   background-color: #010d0d1a;
 }
 .longuer{
@@ -55,7 +55,6 @@
   border-radius: 10px;
 }
 .shad2, .shad23{
-  height: 100%;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   display: flex ;
@@ -64,8 +63,12 @@
 }
 .shad2{
   background-color: #f7d3d3;
+  width: 210px;
+  height: auto;
 }
 .shad23{
+  height: auto;
+  width: 130px;
   background-color: #D0EBFF;
 }
 
@@ -84,7 +87,30 @@
   }
   
 }
+
+@media screen and (max-width : 1026px) {
+  .shad2{
+    width: 210px;
+    height: 125px;
+  }
+  .shad23{
+    height: 120px;
+    width: 130px;
+  }
+  .movi{
+    height: 35px;
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+  }
+  .movi p{
+    font-size: 14px;
+  }
+  
+}
 @media screen and (max-width : 870px) {
+
   .nom p, h1, .texto, .part1, .part2 {
     display: none;
   }
@@ -106,6 +132,19 @@
   }
   .click{
     padding-left: 18px;
+  }
+  .shad{
+    flex-direction: column;
+  }
+  .shad2, .shad23{
+    background-color: #ffffff;
+    width: 95%;
+    height: 70px;
+    display: flex;
+    justify-content: end;
+  }
+  .perso{
+    width: 90%;
   }
 }
 

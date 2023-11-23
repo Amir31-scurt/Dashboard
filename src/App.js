@@ -1,11 +1,5 @@
 // import { FaAddressBook } from "react-icons/fa6";
 import React, { useEffect, useState, useRef } from 'react';
-import {
-  FiMessageSquare,
-  FiUser,
-  FiPieChart,
-  FiSettings,
-} from 'react-icons/fi';
 import { MdOutlinePayment, MdEdit } from 'react-icons/md';
 
 import './index.css';
@@ -14,14 +8,10 @@ import './CSS/Style-App.css';
 import NavBar from './components/NavCompos';
 import { HiXMark } from 'react-icons/hi2';
 import Body from './components/Cartes';
+import ComposBody from './components/ComposBody';
+// import BouTon from './components/BouTon';
 
 function App() {
-  //State {etat, donnees dynamiques}/////
-
-  // comportement///////////////////
-
-  // affichage {render} /////////////
-
   return (
     <div className="flex h-full">
       {/************ SidBar********** */}
@@ -69,41 +59,11 @@ function App() {
             </div>
           </div>
 
-          <div className="ms-8 h-32 w-11/12 shad flex items-center">
-            <div className="shad2 w-4/12">
-              <button className="rounded-full bg-red-700 text-white w-10 h-10 flex items-center justify-center">
-                <HiXMark className="text-3xl" />
-              </button>
-            </div>
-            <div className="mx-8">
-              <h3 className="font-bold mb-2">Your application is rejected! </h3>
-              <p className="text-sm fonto">
-                You submitted on your Letter of Authorization (LOA) is different
-                from what is on file with your carrier in their Customer Service
-                Record (CSR). A CSR is a copy of how your telephone records
-                appear in the telephone company's database.
-              </p>
-            </div>
-          </div>
+          {/* Place ////////////////l */}
+          <ComposBody/>
 
-          <div className="ms-8 h-32 w-11/12 shad flex items-center mt-7">
-            <div className="shad23 w-2/12">
-              <MdEdit className="text-4xl" />
-            </div>
-            <div className="mx-8 w-7/12">
-              <h3 className="font-bold mb-2">Edit Your Service</h3>
-              <p className="text-sm fonto">
-                You may edit your service and then send it for the approval.
-              </p>
-            </div>
-
-            <div className="w-2/12 part3 mt-4">
-              <button className="bg-[#343A40] h-14 flex items-center justify-center mb-6 rounded-md	 w-full">
-                <p className="text-white font-bold text-xl pb-1">Upgrade</p>
-              </button>
-            </div>
-          </div>
           <Body/>
+
         </div>
       </div>
     </div>

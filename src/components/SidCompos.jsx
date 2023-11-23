@@ -6,10 +6,11 @@ import { HiOutlineDocument, HiOutlineViewGrid } from "react-icons/hi";
 import { HiXMark } from "react-icons/hi2";
 import Menu from "./Menu";
 import Elements from "./Utils"
+import BouTon from "./BouTon";
+
 
 export default function SideBar() {
   // state///////////
-
 
   // affichage //////////////
   return (
@@ -47,8 +48,8 @@ export default function SideBar() {
         </div>
 
         <div className="mt-4 flex-col flex gap-2">
-          <Menu icone={<FiUser className="me-6 icono" />} text={'Overview'} />
-          <Menu icone={<FiSettings className="me-6 icono" />} text={'Overview'} />
+          <Menu icone={<FiUser className="me-6 icono" />} text={'Users'} />
+          <Menu icone={<FiSettings className="me-6 icono" />} text={'Settings'} />
         </div>
 
         {/***========= Notice-Menu =========***/}
@@ -65,10 +66,12 @@ export default function SideBar() {
           <div className="w-5/6 m-auto mt-2 part2">
             <p className="pb-3 fonto">Increase your sales by using special features of Enterprise Membership.</p>
           </div>
+
+          {/* Place Bouton  */}
           <div className="w-4/6 m-auto part3">
-            <button className="bg-[#343A40] h-14 flex items-center justify-center mb-6 rounded-md	 w-full">
-              <p className="text-white font-bold text-xl pb-1">Upgrade</p>
-            </button>
+            <BouTon bouty={'bg-[#343A40] h-14 flex items-center justify-center mb-6 rounded-md movi w-full'}
+              contenu={'Upgrade'}
+            />
           </div>
 
 
