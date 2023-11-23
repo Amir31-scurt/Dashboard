@@ -26,11 +26,11 @@ function App() {
     <div className="flex h-full">
       {/************ SidBar********** */}
 
-      <div className="w-1/4 h-auto route border-r-2 border-gray-300 ">
+      <div className="w-1/4 max-lg:w-1/6 h-auto route border-r-2 border-gray-300 ">
         <SideBar />
       </div>
 
-      <div className="w-3/4">
+      <div className="w-3/4 max-lg:w-5/6">
         {/********NavBar**********/}
         <div className=" bg-white-500 border-b-2 border-gray-300 h-22">
           <NavBar />
@@ -86,7 +86,7 @@ function App() {
             </div>
           </div>
 
-          <div className="ms-8 h-32 w-11/12 shad flex items-center mt-7">
+          <div className="mx-8 h-32 shad flex items-center mt-7">
             <div className="shad23 w-2/12">
               <MdEdit className="text-4xl" />
             </div>
