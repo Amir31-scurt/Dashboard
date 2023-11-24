@@ -17,11 +17,11 @@ function App() {
     <div className="flex h-full">
       {/************ SidBar********** */}
 
-      <div className="w-1/4 h-auto route border-r-2 border-gray-300 ">
+      <div className="w-1/4 max-lg:w-1/6 h-auto route border-r-2 border-gray-300 ">
         <SideBar />
       </div>
 
-      <div className="w-3/4">
+      <div className="w-3/4 max-lg:w-5/6">
         {/********NavBar**********/}
         <div className=" bg-white-500 border-b-2 border-gray-300 h-22">
           <NavBar />
@@ -29,11 +29,11 @@ function App() {
 
         {/********* ConTenu Page **********/}
         <div className="documo pt-7">
-          <div className="ms-8">
+          <div className="mx-8">
             <p className="fonto font-bold text-xl text-[#444]">Overview</p>
           </div>
 
-          <div className="w-5/12 ms-8 my-8 flex moto">
+          <div className="w-5/12 mx-8 my-8 flex moto">
             <div className="flex items-center w-3/4 mt-3">
               <div className="imge">
                 <img

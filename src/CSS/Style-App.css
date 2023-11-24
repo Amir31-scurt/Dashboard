@@ -130,7 +130,7 @@
 }
 @media screen and (max-width : 870px) {
 
-  .nom p, h1, .texto, .part1, .part2 {
+  .nom p, h1, .texto, .part1, .part2, .mono1 {
     display: none;
   }
   .imge, .click, .focu {
@@ -181,7 +181,7 @@
     width: 95%;
   }
   .moto{
-    width: 98%;
+    width: 90%;
     flex-direction: column;
   }
   .moto2, .moto3{
