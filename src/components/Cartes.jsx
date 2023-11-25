@@ -26,7 +26,7 @@ export default function Body() {
       para: 'Pricing',
       imge: <img src="Images/img3.png" alt="" className="w-full" />,
       miniP: `Enterprise solutions are designed to integrate multiple facets of a company's business through the interchange of information from various business process ...`,
-      miniP3: <p className="text-sm">starting from</p>,
+      miniP3: <p className="text-sm mb-0.5">starting from</p>,
       miniP4 : <p className="text-xl">50.000 USD</p>,
       footText: `UPGRADE ENTERPRISE`,
       icon: <IoIosArrowForward className="font-bold" />,
@@ -55,12 +55,12 @@ export default function Body() {
           <div className="mx-5 my-3">
             <p className="text-sm">{miniP}</p>
             <p className="text-sm mt-2">{miniP2}</p>
-            <div className='flex items-center gap-1 justify-end'>
+            <div className='flex items-end gap-2 justify-end'>
             {miniP3}{miniP4}
             </div>
           </div>
         </div>
-        <div className="foot flex items-center justify-end bg-white gap-3 px-5 py-4 rounded-b-lg">
+        <div className="foot flex items-center justify-end bg-white gap-3 pe-3 py-4 rounded-b-lg">
           <h2 className="font-bold">{footText}</h2>
           {icon}
         </div>

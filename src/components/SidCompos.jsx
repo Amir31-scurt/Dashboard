@@ -15,11 +15,11 @@ export default function SideBar() {
   // affichage //////////////
   return (
     <div className=" flex flex-col items-center justify-center">
-      <div className="flex items-center w-3/4 mt-3">
-        <div className="imge">
+      <div className="flex items-center justify-center gap-3 mt-3">
+        <div className="w-1/4 mx-2 max-lg:w-3/5 max-lg:mx-4">
           <img src="Images/logoBakeli.jpg" className="" alt="" />
         </div>
-        <div className="ms-5 nom">
+        <div className="nom">
           <h1 className="text-2xl font-bold ms-4">Bakeli</h1>
           <p className="text-sm ms-4 text-gray-500 fonto">
             School of Technology

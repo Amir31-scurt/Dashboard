@@ -11,7 +11,6 @@ import Body from './components/Cartes';
 import ComposBody from './components/ComposBody';
 // import BouTon from './components/BouTon';
 
-
 function App() {
   return (
     <div className="flex h-full">
@@ -33,38 +32,37 @@ function App() {
             <p className="fonto font-bold text-xl text-[#444]">Overview</p>
           </div>
 
-          <div className="w-5/12 mx-8 my-8 flex moto">
-            <div className="flex items-center w-3/4 mt-3">
-              <div className="imge">
+          <div className="mx-8 my-8 flex max-md:flex-col gap-8 max-md:gap-3 flex items-center">
+            <div className="flex items-center">
+              <div className="">
                 <img
                   src="Images/ellipse1.jpg"
                   className="rounded-full"
                   alt=""
                 />
               </div>
-              <div className="ms-5 moto2">
-                <h2 className="text-2xl font-bold mb-3 ms-4">
+            </div>
+
+            <div className="flex gap-5 max-md:gap-3 items-start max-md:flex-col max-md:items-center">
+              <div className="flex flex-col gap-3 max-md:gap-2 max-md:text-center">
+                <h2 className="text-2xl font-bold">
                   Blaze | Service Main
                 </h2>
-                <p className="text-sm ms-4 text-gray-500 fonto">
+                <p className="text-sm text-gray-500 font-medium">
                   Created: 24/02/2019
                 </p>
               </div>
-            </div>
-
-            <div className=" mb-4 ms-4 flex items-center justify-center moto3">
-              <button className="rounded-full bg-red-700 text-white p-1">
-                <HiXMark />
+              <button className="flex hover:text-red-600 gap-2 mt-1">
+                <HiXMark className="rounded-full bg-red-700 hover:bg-red-600 text-white p-1 text-2xl" />
+                <span className="text-red-700 hover:text-red-600 font-bold">REJECTED</span>
               </button>
-              <p className="text-red-700 font-bold ms-2">REJECTED</p>
             </div>
           </div>
 
           {/* Place ////////////////l */}
-          <ComposBody/>
+          <ComposBody />
 
-          <Body/>
-
+          <Body />
         </div>
       </div>
     </div>
